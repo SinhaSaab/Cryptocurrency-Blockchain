@@ -8,11 +8,6 @@ Tried to implement a basic version of Crypto Currency. The project implements th
 5) Consensus Protocol
 6) Verify Transaction 
 7) Valid Chain
-## Team
-1) Rishab Nahar
-2) Rohan Sinha
-3) Thakur Shivank Singh
-4) Vamsi Krishna
 <h3>Structure of Source Code</h3>
 • The folder "blockchain_demo" contains the source code. The code is divided into 2 subfolders named "blockchain" and "blockchain_client", and two other folders named ".idea" and "venv" (these will be created automatically) which will help in building the virtual environment in the PyCharm. These files will help replicate the environment of the project in any system.
 <br>
