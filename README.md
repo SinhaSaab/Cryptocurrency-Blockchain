@@ -1,6 +1,6 @@
 # Cyptocurrency-Blockchain
-Cryptography Team Project<br>
-Implemented a basic version of Cryptocurrency (<b>Litcoin<b>) from scratch. The project implements the prime ideas of blockchain technology, namely:
+<h3>Cryptography Team Project</h3>
+Implemented a basic version of Cryptocurrency (<b>Litcoin</b>) from scratch. The project implements the prime ideas of blockchain technology, namely:
 1) Distributed P2P network
 2) Mining of Block using a valid Proof of Work
 3) Creating new users 
@@ -13,7 +13,7 @@ Implemented a basic version of Cryptocurrency (<b>Litcoin<b>) from scratch. The 
 <br>
 • The folder "blockchain" consists of scripts from the server side (nodes). It is further divided into 3 sub directories. File named "blockchain.py" consists of the python script used to implement various functionalities like <b>create block, verify transaction, Proof of Work, </b>etc. Directory "templates" has the HTML and Javascript (templates) which have been used for the UI. The "static" folder contains the custom CSS and bootstrap frameworks. 
 <br>
-• The  folder blockchain_client consists of the scripts from the user's side. It is further divided into 3 parts. One which has the HTML and Javascript(templates) which is used for UI for the user. The static folder contains the custom CSS part and bootstrap frameworks. blockchain_client.py consists of the python script used to implement various functionalities like <b>signing the transaction, generating transaction, view user<b> etc.<br>
+• The  folder blockchain_client consists of the scripts from the user's side. It is further divided into 3 parts. One which has the HTML and Javascript(templates) which is used for UI for the user. The static folder contains the custom CSS part and bootstrap frameworks. blockchain_client.py consists of the python script used to implement various functionalities like <b>signing the transaction, generating transaction, view user</b> etc.<br>
 
 <h3>Dependencies</h3>
 <p>For running our project following dependencies would be required:
