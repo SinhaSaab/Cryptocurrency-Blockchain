@@ -14,7 +14,7 @@ Tried to implement a basic version of Cryptocurrency from scratch. The project i
 • The folder "blockchain" consists of scripts from the server side. It is further divided into 3 sub directories. File named "blockchain.py" consists of the python script which is used to implement various functionalities like <b>create block, verify transaction, Proof of Work, </b>etc. Directory "templates" has the HTML and Javascript (templates) which have been used for the UI. The "static" folder contains the custom CSS and bootstrap frameworks. 
 <br>
 • The  folder blockchain_client consists of the scripts from the user side. It is further divided into 3 sub parts. One which has the HTML and Javascript(templates) which is used for UI for the user. The static folder contains the custom CSS part and bootstrap frameworks. The blockchain_client.py consists of the python script which is used to implement various functionalities like signing the transaction, generating transaction, view user etc.<br>
-• We have essentially simulated a network with 3 peer nodes and 2 user clients.
+• We have essentially simulated a network with <b>3 peer nodes and 2 user clients</b>.
 <br>
 <h3>Dependencies</h3>
 <p>For running our project following dependencies would be required:
