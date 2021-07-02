@@ -44,3 +44,5 @@ In the IDE, <br>
 • Checks the longest valid chain and replaces all smaller sub-chains present on other nodes by the longest chain in case of clashes.
 <h4>Validate Chain</h4>
 • Checks the validity of the chain by cross-checking the previous_hash stored in current_block, and actual hash of previous block. It also changes the index of the current_block according to the validity.
+<h4>Reward</h4>
+• A reward of 1 Litcoin is given to the node which mines the block.
