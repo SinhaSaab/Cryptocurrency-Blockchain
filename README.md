@@ -30,17 +30,17 @@ In the IDE, <br>
 3) Finally run all these configurations to get a running project.<br>
 <br>
 <h3>Functionalities included</h3>
-<h4>• Creating New Wallet</h4>
-Creates a new wallet for any client. The wallet contains the public and private key for the client. These keys are generated using the RSA algorithm. <br>
-<h4>• Generating Transaction</h4>
-Generates the transaction by accumulating all details like sender's public and private key, recipient's public key and the amount of cryptocurrency to be transferred. All these values are requested from the form using Java Script modules.
-<h4>• Signing the Transaction</h4>
-Generates the digital signature for the transaction using the sender’s private key using the <b>SHA256 algorithm</b>.
-<h4>• Mining the Block/Proof of Work</h4>
-The process of mining the block. Using brute force, we try to get the required nonce and in turn the Hash value which satisfies the difficulty specified. The proof of work computes the computational complexity/work it took to reach the correct Hash.
-<h4>• Verify Transaction</h4>
-Verifies the signature generated during the transaction by using the <i>verifier</i> method in the Json library. It uses the sender's public key along with the transaction list to verify the signature. 
-<h4>• Consensus Protocol</h4>
-Checks the longest valid chain and replaces all smaller sub-chains present on other nodes by the longest chain in case of clashes.
-<h4>• Validate Chain</h4>
-Checks the validity of the chain by cross-checking the previous_hash stored in current_block, and actual hash of previous block. It also changes the index of the current_block according to the validity.
+<h4>Creating New Wallet</h4>
+• Creates a new wallet for any client. The wallet contains the public and private key for the client. These keys are generated using the RSA algorithm. <br>
+<h4>Generating Transaction</h4>
+• Generates the transaction by accumulating all details like sender's public and private key, recipient's public key and the amount of cryptocurrency to be transferred. All these values are requested from the form using Java Script modules.
+<h4>Signing the Transaction</h4>
+• Generates the digital signature for the transaction using the sender’s private key using the <b>SHA256 algorithm</b>.
+<h4>Mining the Block/Proof of Work</h4>
+• The process of mining the block. Using brute force, we try to get the required nonce and in turn the Hash value which satisfies the difficulty specified. The proof of work computes the computational complexity/work it took to reach the correct Hash.
+<h4>Verify Transaction</h4>
+• Verifies the signature generated during the transaction by using the <i>verifier</i> method in the Json library. It uses the sender's public key along with the transaction list to verify the signature. 
+<h4>Consensus Protocol</h4>
+• Checks the longest valid chain and replaces all smaller sub-chains present on other nodes by the longest chain in case of clashes.
+<h4>Validate Chain</h4>
+• Checks the validity of the chain by cross-checking the previous_hash stored in current_block, and actual hash of previous block. It also changes the index of the current_block according to the validity.
