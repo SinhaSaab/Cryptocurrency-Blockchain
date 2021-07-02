@@ -29,7 +29,7 @@ In the IDE, <br>
 2) For creating a user client, we need to configure it on blockchain_client.py and assign 8000 series port to it.<br>
 3) Finally run all these configurations to get a running project.<br>
 <br>
-<h3>Functionalities included</h3>
+<h3>Key Functionalities:</h3>
 <h4>Creating New Wallet</h4>
 • Creates a new wallet for any client. The wallet contains the public and private key for the client. These keys are generated using the RSA algorithm. <br>
 <h4>Generating Transaction</h4>
