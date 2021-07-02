@@ -14,22 +14,22 @@ Tried to implement a basic version of Cryptocurrency from scratch. The project i
 • The folder "blockchain" consists of scripts from the server side. It is further divided into 3 sub directories. File named "blockchain.py" consists of the python script which is used to implement various functionalities like <b>create block, verify transaction, Proof of Work, </b>etc. Directory "templates" has the HTML and Javascript (templates) which have been used for the UI. The "static" folder contains the custom CSS and bootstrap frameworks. 
 <br>
 • The  folder blockchain_client consists of the scripts from the user side. It is further divided into 3 sub parts. One which has the HTML and Javascript(templates) which is used for UI for the user. The static folder contains the custom CSS part and bootstrap frameworks. The blockchain_client.py consists of the python script which is used to implement various functionalities like signing the transaction, generating transaction, view user etc.<br>
-• We have essentially simulated a network with <b>3 peer nodes and 2 user clients</b>.
-<br>
+
 <h3>Dependencies</h3>
 <p>For running our project following dependencies would be required:
 <br>
 1) Python compiler (preferably 3.7.x)<br>
-2) Installing Python libraries such as Flask, Crypto, requests.hashlib, urllib, json, other UI libraries<br>
+2) Installing Python libraries such as Flask, Crypto, cors, requests.hashlib, urllib, json, & other UI libraries<br>
 3) Use any IDE supporting Python (e.g. IntelliJ or Pycharm)
 </p>
 <h3>Running The Project</h3>
 In the IDE, <br>
-1) Configure different nodes according to their requirements. If we are creating a node, then we have to configure it on blockchain.py and assign 5000 port series to it. <br>
+1) Configure different nodes according to their requirements. If we are creating a peer node, then we have to configure it on blockchain.py and assign 5000 port series to it. <br>
 2) For creating a user client, we need to configure it on blockchain_client.py and assign 8000 series port to it.<br>
 3) Finally run all these configurations to get a running project.<br>
+4) In the project, we have essentially simulated a network with <b>3 peer nodes and 2 user clients</b>.
 <br>
-<h3>Key Functionalities:</h3>
+<h3>Key Functionalities</h3>
 <h4>Creating New Wallet</h4>
 • Creates a new wallet for any client. The wallet contains the public and private key for the client. These keys are generated using the RSA algorithm. <br>
 <h4>Generating Transaction</h4>
