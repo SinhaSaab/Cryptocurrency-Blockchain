@@ -1,17 +1,17 @@
 # Cyptocurrency-Blockchain
 Cryptography Team project<br>
-Tried to implement a basic version of Crypto Currency. The project implements the basic idea of any blockchain that are
-1) P2P network
-2) Mining of Block using a valid proof of work
+Tried to implement a basic version of Cryptocurrency from scratch. The project implements the prime ideas of blockchain technology, namely:
+1) Distributed P2P network
+2) Mining of Block using a valid Proof of Work
 3) Creating new users 
 4) View User
 5) Consensus Protocol
 6) Verify Transaction 
-7) Valid Chain
+7) Validate Chain
 <h3>Structure of Source Code</h3>
-• The folder "blockchain_demo" contains the source code. The code is divided into 2 subfolders named "blockchain" and "blockchain_client", and two other folders named ".idea" and "venv" (these will be created automatically) which will help in building the virtual environment in the PyCharm. These files will help replicate the environment of the project in any system.
+• The code is divided into 2 subfolders named "blockchain" and "blockchain_client".
 <br>
-• The folder "blockchain" consists of scripts from the server side. It is further divided into 3 sub directories. One which has the HTML and Javascript(templates) which is used for UI.The static folder contains the custom CSS and bootstrap frameworks. The "blockchain.py" consists of the python script which is used to implement various functionalities like create block,verify transaction, Proof of work etc. 
+• The folder "blockchain" consists of scripts from the server side. It is further divided into 3 sub directories. File named "blockchain.py" consists of the python script which is used to implement various functionalities like <b>create block, verify transaction, Proof of Work, </b>etc. Directory "templates" has the HTML and Javascript (templates) which have been used for the UI. The "static" folder contains the custom CSS and bootstrap frameworks. 
 <br>
 • The  folder blockchain_client consists of the scripts from the user side. It is further divided into 3 sub parts. One which has the HTML and Javascript(templates) which is used for UI for the user. The static folder contains 
   the custom CSS part and bootstrap frameworks. The blockchain_client.py consists of the python script which is used to implement various functionalities like create signing transaction, generating transaction, view user etc. 
@@ -19,14 +19,28 @@ Tried to implement a basic version of Crypto Currency. The project implements th
 <h3>Dependencies</h3>
 <p>For running our project following dependencies would be required:
 <br>
-1)Python compiler (preferably 3.7.x)<br>
-2)Installing Pyton libraries such as Flask, Crypto, requests.hashlib,urllib,json, other UI libraries<br>
-3)Use any one from Pycharm or Annaconda.
+1) Python compiler (preferably 3.7.x)<br>
+2) Installing Python libraries such as Flask, Crypto, requests.hashlib, urllib, json, other UI libraries<br>
+3) Use any IDE supporting Python (e.g. IntelliJ or Pycharm)
 </p>
 <h3>Running The Project</h3>
-In the PyCharm IDE,<br>
-1) Firstly assemble all the scripts in the same order they have been arranged in blockchain_demo project.<br>
-2)Configure diffrent nodes according to their need. If you are making a node then you have to configure it on blockchain.py and give 5000 port series to it.
-  For creating a user client we have to configure it on blockchain_client.py and give 8000 series port to it.<br>
-3)And finally run all these configruations to get a running project.<br>
+In the IDE, <br>
+1) Configure different nodes according to their requirements. If we are creating a node, then we have to configure it on blockchain.py and assign 5000 port series to it. <br>
+2) For creating a user client, we need to configure it on blockchain_client.py and assign 8000 series port to it.<br>
+3) Finally run all these configurations to get a running project.<br>
 <br>
+<h3>Functionalities included</h3>
+<h4>• Creating New Wallet</h4>
+Creates a new wallet for any client. The wallet contains the public and private key for the client. These keys are generated using the RSA algorithm. <br>
+<h4>• Generating Transaction</h4>
+Generates the transaction by accumulating all details like sender's public and private key, recipient's public key and the amount of cryptocurrency to be transferred. All these values are requested from the form using Java Script modules.
+<h4>• Signing the Transaction</h4>
+Generates the digital signature for the transaction using the sender’s private key using the <b>SHA256 algorithm</b>.
+<h4>• Mining the Block/Proof of Work</h4>
+The process of mining the block. Using brute force, we try to get the required nonce and in turn the Hash value which satisfies the difficulty specified. The proof of work computes the computational complexity/work it took to reach the correct Hash.
+<h4>• Verify Transaction</h4>
+Verifies the signature generated during the transaction by using the <i>verifier</i> method in the Json library. It uses the sender's public key along with the transaction list to verify the signature. 
+<h4>• Consensus Protocol</h4>
+Checks the longest valid chain and replaces all smaller sub-chains present on other nodes by the longest chain in case of clashes.
+<h4>• Validate Chain</h4>
+Checks the validity of the chain by cross-checking the previous_hash stored in current_block, and actual hash of previous block. It also changes the index of the current_block according to the validity.
