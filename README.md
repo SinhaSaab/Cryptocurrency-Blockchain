@@ -33,7 +33,9 @@ In the IDE, <br>
 <h4>Creating New Wallet</h4>
 • Creates a new wallet for any client. The wallet contains the public and private key for the client. These keys are generated using the RSA algorithm. <br>
 <h4>Generating Transaction</h4>
-• Generates the transaction by accumulating all details like sender's public and private key, recipient's public key and the amount of cryptocurrency to be transferred. All these values are requested from the form using Java Script modules.
+• Generates the transaction by accumulating all details like sender's public and private key, recipient's public key and the amount of cryptocurrency to be transferred. All these values are requested from the form using Java Script modules. <br>
+![Client_1_generateWallet](https://user-images.githubusercontent.com/66271769/124343873-87ada100-dbec-11eb-89e7-8066600e5acf.PNG)
+
 <h4>Signing the Transaction</h4>
 • Generates the digital signature for the transaction using the sender’s private key using the <b>SHA256 algorithm</b>.
 <h4>Mining the Block/Proof of Work</h4>
