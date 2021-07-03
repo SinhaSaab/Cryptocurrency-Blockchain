@@ -1,8 +1,7 @@
 
 # Cyptocurrency-Blockchain
-
 <h3>Cryptography Team Project</h3>
-Implemented a basic version of Cryptocurrency (<b>Litcoin</b>) from scratch. The project implements the prime ideas of blockchain technology, namely:
+Simulated a Blockchain network & implemented a basic version of Cryptocurrency (<b>Litcoin</b>) from scratch. The project implements the prime ideas of blockchain technology, namely:
 1) Distributed P2P network
 2) Mining of Block using a valid Proof of Work
 3) Creating new users 
@@ -34,17 +33,24 @@ In the IDE, <br>
 <h3>Key Functionalities</h3>
 <h4>Creating New Wallet</h4>
 • Creates a new wallet for any client. The wallet contains the public and private key for the client. These keys are generated using the RSA algorithm. <br>
+<img src="https://user-images.githubusercontent.com/66271769/124363561-8a92ab00-dc59-11eb-887e-e18851bb0fd9.PNG" width="500" height="250"><br>
 <h4>Generating Transaction</h4>
 • Generates the transaction by accumulating all details like sender's public and private key, recipient's public key and the amount of cryptocurrency to be transferred. All these values are requested from the form using Java Script modules. <br>
+<img src="https://user-images.githubusercontent.com/66271769/124363555-836b9d00-dc59-11eb-859e-a668286240a1.png" width="500" height="250"><br>
 <h4>Signing the Transaction</h4>
-• Generates the digital signature for the transaction using the sender’s private key using the <b>SHA256 algorithm</b>.
+• Generates the digital signature for the transaction using the sender’s private key using the <b>SHA256 algorithm</b>.<br>
+<img src="https://user-images.githubusercontent.com/66271769/124363553-81a1d980-dc59-11eb-8815-d1657ec4e042.png" width="250" height="300"><br>
 <h4>Mining the Block/Proof of Work</h4>
-• The process of mining the block. Using brute force, we try to get the required nonce and in turn the Hash value which satisfies the difficulty specified. The proof of work computes the computational complexity/work it took to reach the correct Hash.
+• The process of mining the block. Using brute force, we try to get the required nonce and in turn the Hash value which satisfies the difficulty specified. The proof of work computes the computational complexity/work it took to reach the correct Hash.<br>
+<img src="https://user-images.githubusercontent.com/66271769/124363556-84043380-dc59-11eb-9d1d-d1acaf357dd8.png" width="500" height="250"><br>
+<br>
+<img src="https://user-images.githubusercontent.com/66271769/124363557-849cca00-dc59-11eb-97cc-25f9f002493d.png" width="500" height="250"><br>
+
 <h4>Verify Transaction</h4>
-• Verifies the signature generated during the transaction by using the <i>verifier</i> method in the Json library. It uses the sender's public key along with the transaction list to verify the signature. 
+• Verifies the signature generated during the transaction by using the <i>verifier</i> method in the Json library. It uses the sender's public key along with the transaction list to verify the signature. <br>
 <h4>Consensus Protocol</h4>
-• Checks the longest valid chain and replaces all smaller sub-chains present on other nodes by the longest chain in case of clashes.
+• Checks the longest valid chain and replaces all smaller sub-chains present on other nodes by the longest chain in case of clashes. This is the basis of conflict resolution.<br>
 <h4>Validate Chain</h4>
-• Checks the validity of the chain by cross-checking the previous_hash stored in current_block, and actual hash of previous block. It also changes the index of the current_block according to the validity.
+• Checks the validity of the chain by cross-checking the previous_hash stored in current_block, and actual hash of previous block. It also changes the index of the current_block according to the validity.<br>
 <h4>Reward</h4>
 • A reward of 1 Litcoin is given to the node which mines the block.
