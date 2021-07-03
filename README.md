@@ -15,7 +15,6 @@ Simulated a Blockchain network & implemented a basic version of Cryptocurrency (
 • The folder "blockchain" consists of scripts from the server side (nodes). It is further divided into 3 sub directories. File named "blockchain.py" consists of the python script used to implement various functionalities like <b>create block, verify transaction, Proof of Work, </b>etc. Directory "templates" has the HTML and Javascript (templates) which have been used for the UI. The "static" folder contains the custom CSS and bootstrap frameworks. 
 <br>
 • The  folder blockchain_client consists of the scripts from the user's side. It is further divided into 3 parts. One which has the HTML and Javascript(templates) which is used for UI for the user. The static folder contains the custom CSS part and bootstrap frameworks. blockchain_client.py consists of the python script used to implement various functionalities like <b>signing the transaction, generating transaction, view user</b> etc.<br>
-
 <h3>Dependencies</h3>
 <p>For running our project following dependencies would be required:
 <br>
@@ -33,18 +32,18 @@ In the IDE, <br>
 <h3>Key Functionalities</h3>
 <h4>Creating New Wallet</h4>
 • Creates a new wallet for any client. The wallet contains the public and private key for the client. These keys are generated using the RSA algorithm. <br>
-<img src="https://user-images.githubusercontent.com/66271769/124363561-8a92ab00-dc59-11eb-887e-e18851bb0fd9.PNG" width="500" height="250"><br>
+<img src="https://user-images.githubusercontent.com/66271769/124363561-8a92ab00-dc59-11eb-887e-e18851bb0fd9.PNG" width="500" height="250">
 <h4>Generating Transaction</h4>
 • Generates the transaction by accumulating all details like sender's public and private key, recipient's public key and the amount of cryptocurrency to be transferred. All these values are requested from the form using Java Script modules. <br>
-<img src="https://user-images.githubusercontent.com/66271769/124363555-836b9d00-dc59-11eb-859e-a668286240a1.png" width="500" height="250"><br>
+<img src="https://user-images.githubusercontent.com/66271769/124363555-836b9d00-dc59-11eb-859e-a668286240a1.png" width="500" height="250">
 <h4>Signing the Transaction</h4>
 • Generates the digital signature for the transaction using the sender’s private key using the <b>SHA256 algorithm</b>.<br>
-<img src="https://user-images.githubusercontent.com/66271769/124363553-81a1d980-dc59-11eb-8815-d1657ec4e042.png" width="250" height="300"><br>
+<img src="https://user-images.githubusercontent.com/66271769/124363553-81a1d980-dc59-11eb-8815-d1657ec4e042.png" width="250" height="300">
 <h4>Mining the Block/Proof of Work</h4>
 • The process of mining the block. Using brute force, we try to get the required nonce and in turn the Hash value which satisfies the difficulty specified. The proof of work computes the computational complexity/work it took to reach the correct Hash.<br>
 <img src="https://user-images.githubusercontent.com/66271769/124363556-84043380-dc59-11eb-9d1d-d1acaf357dd8.png" width="500" height="250"><br>
 <br>
-<img src="https://user-images.githubusercontent.com/66271769/124363557-849cca00-dc59-11eb-97cc-25f9f002493d.png" width="500" height="250"><br>
+<img src="https://user-images.githubusercontent.com/66271769/124363557-849cca00-dc59-11eb-97cc-25f9f002493d.png" width="500" height="250">
 
 <h4>Verify Transaction</h4>
 • Verifies the signature generated during the transaction by using the <i>verifier</i> method in the Json library. It uses the sender's public key along with the transaction list to verify the signature. <br>
