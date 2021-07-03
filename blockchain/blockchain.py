@@ -52,18 +52,7 @@ class Blockchain:
         return block
 
     def verify_transaction_signature(self, sender_public_key, signature, transaction):
-        """
-        The Zero Knowledge Proof algorithm with the
-        t = g^e
-        c = H(m  t)
-        d = e - xc
-        The miner would send (c, d) as the signature, along the message m.
-        Which is basically a hash of the message with a proof that he knows the secret x.
-        To verify the signature you would use the public key y = g^x to compute y^c  g^d = t
-        and then you would compute the hash. (All this is accomplished using the RSA function here)
-        It would give you the proof that the signer knows x (authentication, non-repudiation) and
-        that the message hasn't been tampered (integrity) with zero knowledge of the value of x !
-        """
+        
         public_key = RSA.importKey(binascii.unhexlify(sender_public_key))
         verifier = PKCS1_v1_5.new(public_key)
         h = SHA.new(str(transaction).encode('utf8'))
